@@ -29,7 +29,7 @@ export function HeroPresentation() {
                 variant="small"
                 className="flex items-center font-bold uppercase"
               >
-                Astro Starter Template
+                Starter Template
               </Typography>
             </div>
             <Typography
@@ -37,10 +37,10 @@ export function HeroPresentation() {
               color="blue-gray"
               className="mb-8 lg:mr-32 leading-tight font-black"
             >
-              The perfect foundation for your <span className="text-blue">Astro Project</span>
+              The perfect foundation for your <span className="text-blue">Project</span>
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
-              AstroLaunch UI is a free template designed to be both lightweight and feature-rich. It comes packed with everything you need to get your Online Store ready in no time.
+              Launch UI is a free template designed to be both lightweight and feature-rich. It comes packed with everything you need to get your Online Store ready in no time.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="#pricing">

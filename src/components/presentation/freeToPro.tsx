@@ -56,7 +56,7 @@ export function FigmaPresentation() {
               color="blue"
               className="font-bold text-lg mb-5"
             >
-              Fully Coded Components based on Astro
+              Fully Coded Components
             </Typography>
 
             <Typography

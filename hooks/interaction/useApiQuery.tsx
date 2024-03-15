@@ -34,8 +34,8 @@ export const fetcher: Fetcher<ApiOutput, FetcherArgs> = async ({
     ...(headers && { headers }),
   };
   if (payload) {
-    return await apiCall[type](path, payload, options);
-  } else return await apiCall[type](path, options);
+     await apiCall[type](path, payload, options);
+  } else await apiCall[type](path, options);
 };
 
 export const useApiQuery = ({
@@ -56,11 +56,5 @@ export const useApiQuery = ({
       ...options,
     }
   );
-
-  return {
-    data: data,
-    isLoading: !error && !data,
-    isError: error,
-    mutate: mutate,
-  };
+ return {}
 };
