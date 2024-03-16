@@ -1,14 +1,13 @@
 import { defineConfig } from "astro/config";
-
 import react from "@astrojs/react";
 
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind";
-
-const isProd = process.env.NODE_ENV === "production";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [react(), tailwind()],
-    base: "/",
+  integrations: [react(), tailwind()],
+  base: "/",
+  output: "dist",
+  adapter: vercel()
 });
